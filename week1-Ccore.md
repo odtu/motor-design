@@ -39,9 +39,37 @@ The steps to be completed:
 
 - Calculate the leakage inductance and compare it with the main inductance.
 
+- Increase the current by 2, 5, 10 times and repeat the calculation of inductance to see how the inductance changes with current.
 
-A short course on motor-design using finite element software. The course is held weekly by [PowerLab](http://power.eee.metu.edu.tr)
+## Some Hints
 
-## Program
+- Understand the analytical model before building the FEA model.
 
-- ## Week1: [Flux Distribution in C-Core](Week1-Ccore.md)
+- When constructing the FEA model, go step-by-step. First try the simplest case and check if it is working as intended, if it works then make it more realistic.
+
+- I strongly advise you to start with 2D simulation. Don't worry you will have time to do enough 3D simulations in the following weeks.
+
+- Don't try to model 100 turns wire by wire. Instead use a rectangular coil as shown in the figure (i.e. you can assume 1 turn, with 12000 A). I leave it to you of choosing the coil dimensions.
+
+- Don't forget to choose a reasonable solution space (i.e. air around the core), and don't forget to assign air material properties.
+
+## Deliverables
+
+- I expect each student to prepare his/her own assignments including the analytical calculations
+
+- A set of figures (.png) for flux distribution etc.
+
+- A document (preberably in .md format, but .doc is also ok) for you comments etc.
+
+- Put your files in a separate folder with your name in Week1-Assignments folder (you should have write access to the Github repo)
+
+- If you can't manage to upload to the GitHub please bring your files in a USB stick on Friday
+
+- Do NOT put your FEA files or any big files to the course repo (You are free to create your own repos for this purpose).
+
+## Still Have Questions?
+
+- Please don't hesitate to ask for help. You are encouraged to work together, but I expect everyone to prepare their own assignments.
+
+- If you have a public question, please [open an issue](https://github.com/odtu/motor-design/issues/new) in this repo, and I will try to answer it asap.
+
