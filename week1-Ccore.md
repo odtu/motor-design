@@ -1,4 +1,4 @@
-# Week 1- C-Core
+# Week 1- Basics of Magnetic Circuits
 
 ## Topics Covered:
 
@@ -7,7 +7,7 @@
 - Leakage flux, fringing flux
 - Definition of inductance
 
-## Assignment
+## Assignment:
 
 As the first week's assignment, you are required to model a C-core as shown below:
 
@@ -41,7 +41,7 @@ The steps to be completed:
 
 - Increase the current by 2, 5, 10 times and repeat the calculation of inductance to see how the inductance changes with current.
 
-## Some Hints
+## Some Hints:
 
 - Understand the analytical model before building the FEA model.
 
@@ -53,7 +53,7 @@ The steps to be completed:
 
 - Don't forget to choose a reasonable solution space (i.e. air around the core), and don't forget to assign air material properties.
 
-## Deliverables
+## Deliverables:
 
 - I expect each student to prepare his/her own assignments including the analytical calculations
 
@@ -66,6 +66,8 @@ The steps to be completed:
 - If you can't manage to upload to the GitHub please bring your files in a USB stick on Friday
 
 - Do NOT put your FEA files or any big files to the course repo (You are free to create your own repos for this purpose).
+
+- If you didn't put effort on any of these above, there is almost no benefit you can get from this course. Therefore, I advise you not to waste your time on Friday as well.
 
 ## Still Have Questions?
 
