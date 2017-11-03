@@ -1,48 +1,55 @@
 ### Flux distributions
 
-Air Gap Reluctance = 0.01/(4*pi*10^-7*0.01*1) = 796000 ampere/weber
+Air Gap Reluctance = 0.01/(4*pi*10^-7*0.01*1) = 397887 ampere/weber
 
-Inductance of the device = N^2/R = 100^2/795000 = 0.0126 henry
+Inductance of the device = N^2/R = 100^2/397887= 0.025 henry
+
+Expected flux density inside the core is around 1.5T from B = NI/AR
+
 
 Flux Distribution for relative permeability 1000
-![](https://lh3.googleusercontent.com/Nfiqmt7ORctdg32veQvogDhQ0HeOuNBGSpXWAmZrzw5-TzDipNezgA4ix_0w81_YZu1BTJISH3nHRBgCMUI3KJxC0ob6lYRVnKlUOnHEsPrB3uBaPDAriG1eIDgjHpf7oPsCWOdCQl3ASgg0jIfYW1qBlGAm6pYwb2I8jGOCiwuPrdNvJ0BtoZOmhy15xhOn_CGLTDURnQmr3TzDZzLv7-ptgkDXrrsM-4z96FlDjXh5kiiBAsLoLpVZ3GP8vbBQSTeBYm5OA8xrSWGdnrrbyAtm5xK-kDhuYObJQEsnqJDQitP90S8TIlU3XU42IsPYzHWQ8G5UU8a25N-vAQ4O3lWUUKeNZlD_Bt62mzOS4TlgYtli361u324vd5o6TJYFzfqwIVpNBZchwGZR_8_PgQEYIhcx84XtOBOQSutPspp1dDBEnfQ6ilqhmU4bEZmbX-5XOzpFtxkVriA2zW2OU5kwHZMxR96SW8XEEpBjaTRpIJVWMfK6LGc8AneJJNQd0n8yRD_WcMjWs6nuDCTsRfdb-jGjJUjZ3sDNm8ciR3wb0q5rPRGxqsT0ZKuflkuERubdnyuly-BCPUYRKGziMAw63EsGShelugqnh9NGdg=w1237-h646-no)
+![](https://lh3.googleusercontent.com/RQH6hYMQvvJkhbi4plGyIOxLzjwEuU0eLla6HQdSRxiOB-OkTi-78sjqE4CjuyQO2KuJ-RE5Ks2Z6mMloC1aG4ph04YlZF5SnfnG62QrvuH3eT38TH508-pWXfP8M5ho_mEv_gZOxJreyBGzTr9BbZoxawT901Gv__vhYYROuGW5Svgg4RB1hh_5l0W7nsj8qZrTFfGC3P1BEdNk-FNaC7epP7ItRZFat9b2goo6o4NTIr6A0gZ5z6N1OF4G9ap19H8uNU9Ti7TP_kYsjXHEZFUmCldHnT4K5_r2txlTyEAWs2V1WQhAY2QmR2hTbu-3mrrRdWlvXJGVT7xjJhyEcwxUDkj0gLQ6ULb-talofRcHfFi8kaDo9Glw1ie_G7PRs09zwtgj0QiDmgNTqz1c-gEbbwW_3ApgM8RWVj1pAAQn5_hkBq5T9v3cV9bVA40JIJk1B-QoAzX6wDNKZDylOma1_uV8ppsU4mUBg9oZI_pZtB3Y-mIRK440nisHQZtzXD0zvylXkj4uuBD2n9xdK9fDwMnbqtb986JJhjwZuh5xw6rrjMbx2QU6Uj0s7LLIoaDDrPyFQy36Fy6zCqzOpEYE4tuC9Ua6nX3y-jJpGQ=w1503-h642-no)
 
-I tried the create two materials with the given B-H curve however since the B field is small it resulted as same for both materials
+Flux Density across the airgap is
+![](https://lh3.googleusercontent.com/01-yG021bQJHc17siDxAsOzbesfsFjsHejTmnWwN_n4LjiLbuvHECZ3MDBm_iBoY7n8U08PcjOeYREMWg8gBsLU8IXf_e-v5JPgIg4bIQok7TooykpEcKpe9eI-516HrZrI0sjFBF8Xx-wW1P6PkptBarba2Db3y_Krqj0bqwXrLslbxnVgn63UBZoDUGknKXgMqE6w5vnTq08HMLFq5Bg1Aeispgwl9X1yDSOdQkp8w8oXD0nWZVDkB0QXgEYpZN8Ensho7yflHqF6TUvd9vf4Sd9eO5FPrq_WsuxgyXQynWnM-MRNvPR1Y4IWraDjQmlXad_XBNQgrPy5C5KbCBjLkJQ6FgdsJG5fGwKKz3hVmP82bwy3db8NpL87QmQKEJok1C4UMoMg0tOolasKZ3ZO4VnwNW5yvdxLEsqxZRsiyBrmgnY_VTXG8VDoZbGN3sbT3vTUGR1aEwzwA0FvByE8yWamZjhv5RtOavXMUrZiumFeDEZ5wGFmXii2PJnSo4-HuLK1i5tg_bXAouBsZlj2tCGoVQnDI1kZ-1SplFuXQ_MBJ_DEDmxKLyw1xGNqIhGFm0_-r6szz0SyXeFVvq2BrEnCX65zZt07UxXMSJg=w1703-h642-no)
 
-for iron & steel in the given figure for I=120 and Nt= 100
-![](https://lh3.googleusercontent.com/ZiRANvhzIDbBNyPOpFJmUBHKYnfE09wAMLp96O_wbwTmHpqVTHkrGnK66vPODKdW15pXzIrho7K-BoS8vwHBlGONDOy0uSipSKIgxl18MwMZmJzxCXlPtJclhoJ0O6KwXv-dHZxZW6lJdisCKKHYNXMQ4q4usQmNPiLXTV9sK3rRMqBmCXYy_PIqhcZaFRot1lIQKOeUE2YGUb-0hTNA2W7_K45Gc8P4NCXEt30IDd8x3LurOgyDtn34FNnaXWfqYENorj-yqruPWkUxj6QSEDVTs6Cy49yp8rvfn-mEH49l4Ki-nX3IkXY1Q7AQd3BA3Kz2aFy_WXtXsS-HT3hum_yhmq_m55j0QhQ8n_DhKOsLejOSbNVMmmd7lTsqTD4C8QOmdcmji_31UlPuUS4jIdnB8E7-O25ydXgqkzR36Mbjcksb3PYVtseQOCWkwhEXBMee5xX9eo8LJfGXdNGRRAgVEanlLK87K2jOEGegAvZAoQ_ZhmHE-hvKVj8UcqW8pI9cZAB2rLKW5PqLLszgjboK4e8uvUyUHNnvwq743fJEH0urykH_GnuI84D01dbPl1Pt8WsxFRaSEqRNaDaFKrXWtlBcca54lohTcRmIxw=w958-h410-no)
-Due to the leakage, left handside of the core has more B than the right handside
-
-### Leakage and main flux&inductance comparisons
-
-leakage flux is around 3.77mT for I = 120 and material is steel
-total flux is around 27.39 mT
-
-then main inductance becomes : 27.39*10^-3*0,02*1/120 = 4.56 microhenry which is very different from the analytical results.
-leakage inductance : 3.77*10^-3*0,055*1/120 = 1.72 microhenry  which is 37% of the main inductance
+Created material with the following BH curve for the following simulations 
 
 
-for 24kA
-B = 7.4mT for leakage
-B = 54.7mT in core
+ ![](https://lh3.googleusercontent.com/SGSqnUIOveHKzROF8FpCM7t90RwT4Qp_ELWMLrOsexJ8ZUe-mMgt9h49_cwlldoBkxaUlX6F4g-CXQnxNVrgvcGxuZ2usn6YZ6N15JoYFXSkkp8VyZcfi-KqkjM6ThYbWcJEgKAsalOgyECpOOf13F4LNz3I89iLT7MEqfbuv3k63_OmGerPe1S_jEStFj2ZPYUtoqCU3GepJOKlL9zFNa02L47WBOeFmQN8ksQZFrLeejWqv6e2JF0Oda3s3IAL2zaPJibKEYB3AQE6k53TnrLrTMMgc2nssZ6algKwVDOlpTyio2FIQs7B-sSkqwmKNJ3KOZ8JAuVdH_WCnLQER83teDhr8xsNFDd33iZEKRVU2DqTMlmpBh9KDBJRlox-iENPQ1uu-FwFTEBcVGVAQiWVTrl38foPb9IqL0hYXjVLvDnrcVMxjY6iczXlWYCrf3JyjMvMSdWqER9gCYaGLLEEa4gaHrVr-eN6JyCKYmwteCqWkH1fijSbFIWoulvyt4Cs8r7Ja1y4387Ggx4Owku147wsDWNh0SCSNY1hVurLivCeAydP9mW8xs-7yv9o7eZyrnJ3mTv8o2rdHh9IhNV4ttJff-eTDtnSVUJr2A=w463-h236-no)
+ 
+ ![](https://lh3.googleusercontent.com/Y3H3SkEJbgXYWnfK1hjo5AsrawlV6DufNDLk1Na14U2zEi-__sW457P6VubJcSQl0Tfk9uGXenPFrI36X6Hoo_rP_RJmm-PFs3mriRidk3YkiPZvQwFjCjJWfQCRQd_5YOigLpqYhY3kNK4ndLRGx8Nr40Nc5K1aV-kuiftNMVr-NfHjXRO1XiPLazBcZJdrh4FoJ750yEF3tsIHvfrd2P3zvS3f-DlMGavne8bcyUZZ_5ek3AIbmMcuhIpczh728X2qn7WdLfq0acVlsZG5H0cekVcbvbMVVKOBJiO7Jbr-sLuQ9UAtyrjVdBCleFyCiZOUFX3LWXt2udXgRE56hTpLNwoLYl13Outpz1RHrfu-ORO_E7OLYL07wuOl8Z52adZH4gq4GxGKQUiPl9o19VRQhuS2oC4L0iDpYvoaBSwGdJskV5nt3veDwGCXL8uC-M-QfiD7sh3zk3WvLpq7npctEOkBsx_uGi_UepVeKwaQUxNv5XP99NDSwZaPf3XUjQAHEjz08CfZv9au4kSIYctio46Vfvys2lPn8JQYFOIEXy4yFJ9PBF7DLg-HGBWa2EWql7m6We04jewOrx4iMIoS_atna1MfdwSt85E9rw=w1503-h642-no)
 
-for 60kA
-B = 18.9 mT for leakage
-B =137.46mT in core
-
-for 120kA
-B = 37.8 mT  for leakage
-B = 275.34 mT in core
-
-for the results above the core is steel given in the assignment
-
-both changed linearly since because no saturation occured in the core.
-in the case of a saturation, the change of B with current would decrease inside the core.
+![](https://lh3.googleusercontent.com/okc3f6478xj1yJkCs6xwLbM5ayFyeQ4ou6OgAqmrg9JOcsN0huUSFWyMij0-j3AwQ-9u9W97nMgMyiJ4gRz-k3ZDRq-lAvziKb-Ssook4A2pgGcISBpjnLnN3VSx3dGsUWiRRO-JhQulggZ7g64rVVamqDnyr5_Fm8uYv8H2eODusQZKUuVSyLay8wxXIL7g-GYXL7YeK4-BL1_4oXV_Ig-AQ0uGNWcnfqsadScXVLdW6O_CT_bm1ChUOXS_stxlhW6SX00qU6XuzWgkPSmdxAKArbysOLJUOtQ_tAwTAoPMsKsSMGHpFh-WEKXn2GJs-tHfod9DKq2oRcpYOCFcezoLKDQQHKZtPFm0BsfAtYCK4z1Br3Mj3rGcNX2MY3ZjOWnbCBLcep6CQw_dhgA_9krH1FpsJUf-dR30MtSz8f7T-VPEsYbKI14XQKNdre--IOXCAcRTsORX-nErulqOh8tVT2_TITCSdwHDO4eFx4mpPF4Lush0SB_PRINDQSDPq1WVfcWX27xGmbIRh044mazfTL9BnanmgMBqFLVbXy-plIlbhxRLfNLpFGIb4fcTeixngZ1gS5_Rd7rHK7-jFptGjucG2QfjwTDLJ-NIgw=w1703-h642-no)
 
 
+overall flux density 
+![](https://lh3.googleusercontent.com/IGmrx-ZrUCDZBV0ryD4cZIe0jhwlTGGVP0ZTojLjKM7KSymVm3zFdmJAWczyA3fqkM10fmcPw2XqmboyXJUSh2isXEUx1D04YkgJfQFRAusHfZe0Vcn-2simCko2fIejEHOzAUEcm0CFt-8v2qh0QGmgb2-q2ENq6c3vGYWk5xYcbFQbQQf-8JswhlwXj2_axX2d3EZ-NUR_YHHTD8MeuC6gnb_cYdEcuYQm_M3jrQ18Wlgqf4HsU4ANQDxs57BOIBvvcYPjhKbujGlRV5LjIw9ulCdghBao63iAPfOX0AwbQR_1Ph5caUN49B8Pyf3Tltr90u-varz2oN_rR7THIpvsVxGMdVgsFf8jsCgQRV6GWDdBPeQAAoI2DLRqOZ1YOG9G8Gv-ZdGp7m89cSxfAkUUUNmc1IAOa3WRBNGBexmWsm93QKPDfAmQsKdwMsKy9GQIvYiEZ_7VoDcOtdzXgEkTwVdVRFwGLYqEwr8mq3Ph7HuQQDEPsy9y_gXFUD0atNFaYPYMjw-L3EOCqGMUWba5hQBAlVR1yt3g-JD0K9-B-nb9w4ScjHmR3M6O_Ky8dUlLmhaK-Klg5jWXKc9tAZA2gDPAXYnA_LKCe6qyIw=w1503-h642-no)
+Due to the leakage flux, left side of the core has more flux density then the right side.
+Fringing fluxes decreases the overall reluctance of the airgap due to the increase in the area.
+
+for I = 120 A
+Total Flux in the core is around 35.7miliWeber
+then resultant inductance L = flux/current = 35.7/120 = 296mikroHenry  
+Total Leakage flux is around 3miliWeber
+
+for I = 240 A
+Total Flux in the core is around 43.1miliWeber
+then resultant inductance L = flux/current = 43.1/240 = 180mikroHenry  
+Total Leakage flux is around 4.5miliWeber
+
+for I = 600 A
+Total Flux in the core is around 64.09miliWeber
+then resultant inductance L = flux/current = 64.9/600 = 108mikroHenry  
+Total Leakage flux is around 10.22miliWeber
+
+for I = 1200 A
+Total Flux in the core is around 98.32miliWeber
+then resultant inductance L = flux/current = 35.7/120 = 81.9mikroHenry  
+Total Leakage flux is around 20miliWeber
 
 
+![](https://lh3.googleusercontent.com/xDogYsieNIyDm3HQuuHj-ZXdPPf5xLW2qShO2Xh5GiWCxPG_dlSmkVPiOfaeSNbGc5bWuuPj-GvkBEzN8F-XtXMr4ciE86Juh7IZCCooes6Of-zmviugp5ZWZ2pq3p6VoAdxT3I-PpYfiPsxPawgIERZg2bx9cHS9C0N-D4v_1ZvotxnwsruVpbJtOXZfAhIOZ905LWNhZnIDMDmbvqcn4nthLLHeZUKrQQ3vpuUyicqvUdOAZG2eCLJ6YpjTbur_fgO6MKkCIj-Z-SRgrUTZOPWnmtk2FtV7SqsouCCHVKlth2NJA5okDZx1yYybD5Kh4eabyuxGXpvikcsNxU4MFe-IagbqaRJCO187uFvSH0aPsk2QdiYYCL498pxiPRMtvGYEXPllsnmWZWeSpbMsBmUEe8rOWUMB1XkKCKOdVMgP9_z1WeHUSfFwJzevEeWUEOfHyQl86tWlTFpdOMQQkkBQFTs4ODIqo94PtZxRyVvDfhAGwOmcxM45IlD4FQIWJsRlBXM12YCY3xkgDFVoLPOIyDhYkOLaNqLLLLSm9HwZfS3yzmOugQQRj4lCPqQEldV4vVwT_tOhzFJAaOAe1ertgL_q-M7V2ayTSHTTg=w540-h408-no)
 
-
-
-
+as the current increases, the core saturates and B field does not change linearly with current.
+this causes decrease in the inductance with the increasing current.
