@@ -21,53 +21,53 @@
 
 COMSOL Multiphysics model of C core is available below with its mesh:
 
-![](Mesh.png "")
+![](Files/Mesh.png "")
 
 
 
 
 -  **Draw the magnetic flux density distribution (assuming core is electric steel with a relative permeability of 1000, just linear material, no saturation at this point)**
 
-![](B_Distribution.png "")
+![](Files/B_Distribution.png "")
 
 - **Then repeat the previous part with the B-H curve below (If the software has a similar built-in material, you can use it). Comment on the maximum levels of flux densities compared to the case with linear core material.**
 
 Steel Core:
 
-![](B_Distribution_SteelBH.png "")
+![](Files/B_Distribution_SteelBH.png "")
 
 Iron Core:
 
-![](B_Distribution_IronBH.png "")
+![](Files/B_Distribution_IronBH.png "")
 
 Air Core:
 
-![](B_Distribution_AirBH.png "")
+![](Files/B_Distribution_AirBH.png "")
 
 - **Plot the flux density vector distribution (e.g. like the one below), and comment on the fringing flux and leakage flux effect. You may need to play with mesh-size and vector-size to obtain a nice figure**
 
-![](airgap.png "")
+![](Files/airgap.png "")
 
 - **Plot the airgap flux density distribution across the airgap (i.e. on a horizontal line drawn at the center of the gap). It is expected to be like a flat sine wave**
 
 
-![](airgapline.png "")
+![](Files/airgapline.png "")
 
 
-![](airgaplineB.png "")
+![](Files/airgaplineB.png "")
 
 - **Calculate the total flux in the core, and the leakage flux (You need to integrate B over some line).**
 
 Total Flux:
 
 For mr=1000 case:
-![](totalfluxinthecore.jpg "")
+![](Files/totalfluxinthecore.jpg "")
 
 For steel core case (with give BH curve): 0.0284 H/m
 
 For iron core case (with give BH curve): 0.0109 H/m
 
-![](leakage.jpg "")
+![](Files/leakage.jpg "")
 
 - **Calculate the main inductance, and compare it with the analytical results**
 
@@ -85,4 +85,4 @@ Leakage inductance is much smaller than main inductance as expected.
 
 For mr=1000 case, increasing current does not effect the inductance. Lets see what happens when we increase the current for steel core case:
 
-![](Inducuctancewithcurrent.jpg "")
+![](Files/Inducuctancewithcurrent.jpg "")
