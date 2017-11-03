@@ -58,7 +58,14 @@ Air Core:
 
 - **Calculate the total flux in the core, and the leakage flux (You need to integrate B over some line).**
 
+Total Flux:
+
+For mr=1000 case:
 ![](totalfluxinthecore.jpg "")
+
+For steel core case (with give BH curve): 0.0284 H/m
+
+For iron core case (with give BH curve): 0.0109 H/m
 
 ![](leakage.jpg "")
 
@@ -66,6 +73,16 @@ Air Core:
 
 ![](https://latex.codecogs.com/gif.latex?L_%7Bm%7D%3D%5Cfrac%7BN%5Cphi%20%7D%7BI%7D%3D%5Cfrac%7B100*0.0788%7D%7B120%7D%3D0.065)
 
+There is a differece between analytical solution and FEA results about the inductance. The difference comes from infinitely permeable core assumption in the analytical solution.
+
 - **Calculate the leakage inductance and compare it with the main inductance.**
 
 ![](https://latex.codecogs.com/gif.latex?L_%7Bleakage%7D%3D%5Cfrac%7BN%5Cphi%20%7D%7BI%7D%3D%5Cfrac%7B100*0.006%7D%7B120%7D%3D0.005)
+
+Leakage inductance is much smaller than main inductance as expected.
+
+- **Increase the current by 2, 5, 10 times and repeat the calculation of inductance to see how the inductance changes with current.**
+
+For mr=1000 case, increasing current does not effect the inductance. Lets see what happens when we increase the current for steel core case:
+
+![](Inducuctancewithcurrent.jpg "")
