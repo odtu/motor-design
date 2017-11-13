@@ -68,6 +68,8 @@ for(B=1:0.1:1.5)
             aa(cnt1,cnt2+9)= Pcopper;
             aa(cnt1,cnt2+10)=efficiency;
              aa(cnt1,cnt2+11)=cost;
+             aa(cnt1,cnt2+12)=corevolume;
+             
            
                          
            end
