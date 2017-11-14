@@ -16,12 +16,12 @@ leakage_inductance=0.04;
 corecost=3;
 coppercost=10;
 I2=Srated/(v_2*sqrt(3));
-aa=zeros(70);
+aa=zeros(100);
 cnt1=1;
 cnt2=1;
 
-for(B=1:0.1:1.5)
-    for(N2=1:1:10)
+for(B=1:0.1:1.7)
+    for(N2=1:1:15)
       %assume linear increase in the core loss.(interpolation)
       lossperkg=3*B-2;
       
