@@ -46,8 +46,10 @@ R_primer=copper_resistivity*4*a.*n1./primer_copper_area;
 R_seconder_prime=n.^2.*copper_resistivity*4*a.*n2./seconder_copper_area;
 
 %power losses
-P_copper=3*I1^2*(R_primer+R_seconder_prime);
+P_copper=I1^2*(R_primer+R_seconder_prime);
 P_core=core_loss_density.*core_mass;
+Efficiency=100*10^(6)./(10^(6)+P_copper+P_core);
+
 
 
         
