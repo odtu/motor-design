@@ -5,7 +5,7 @@ f=50;%hz
 
 J_max=3;%A/mm2
 core_loss=1;%W/kg @1 T, 2.5 W/kg @1.5 T (There are better laminations)
-d_copper=1.7e-8;%Ohm.m (goes up with temperature)
+r_copper=1.7e-8;%Ohm.m (goes up with temperature)
 fill_factor=0.6;
 mu_init=1000;
 L_leakage=0.04;%pu
@@ -28,7 +28,7 @@ l=sqrt(A);%assume square crossection
 %STEP4
 %maybe later
 
-%STEP5
+%STEP5-6
 I1=Q/V1;
 I2=Q/V2;
 A_Cable_1=(I1/J_max)/1e6;
@@ -38,9 +38,16 @@ r2=sqrt(A_Cable_2/pi);
 window_1=r1*2*N1;
 window_2=r2*2*N2;
 
-%STEP6
+%STEP7
 V=2*((A*window_1)+(A*(l+l+window_1)));
-mass=V*
+d_core=7.9e3;%kg/m^3
+mass=V*d_core;
+Core_loss=1*mass;%Watt
+
+%STEP8
+l_cable_1=N1*4*l;
+l_cable_2=N2*4*l;
+
 
 
 
