@@ -1,0 +1,50 @@
+clear;
+S_rated=10^6;
+V1 = 34500; 
+V2 = 400;
+N1 = 345;
+N2 = 4;
+I2 = S_rated/V2;
+I1 = N2/N1*I2; 
+B = 1.2; %Tesla
+current_density = 3; %A/mm^2
+core_loss = 3*B - 2; %W/kg
+copper_resistivity = 1.7*10^(-8); %Ohm.m
+fill_factor = 0.6; 
+permeability_air = 4*pi*10^(-7);
+permeability_relative = 795.77;
+H = B/(permeability_air*permeability_relative); %A/m
+leakage_inductance = 0.04; % pu
+core_material_cost = 3; % $/kg
+copper_cost= 10; % $/kg
+freq=50;%Hz
+core_density = 7850; %kg/m^3
+copper_density = 8960; %kg/m^3
+
+Bmax = B*pi/2;
+core_area= V1/(4.44*freq*N1*Bmax); %m^2
+length_mean = N1*I1/H; %m
+core_volume = core_area*length_mean; %m^3
+core_mass = core_volume * core_density; %kg
+coil_area1 = I1/current_density/10^6; %m^2
+coil_area2 = I2/current_density/10^6; %m^2
+core_width = sqrt(core_area);
+coil_length1 = 4*core_width*N1;
+coil_length2 = 4*core_width*N2;
+copper_volume1 = coil_length1*coil_area1;
+copper_volume2 = coil_length2*coil_area2;
+copper_volume = copper_volume1 + copper_volume2;
+copper_mass = copper_volume * copper_density;
+R1 = copper_resistivity * coil_length1/coil_area1;
+R2 = copper_resistivity * coil_length2/coil_area2;
+R_core = length_mean/(permeability_air*permeability_relative*core_area);
+Lm = N1^2/R_core;
+P_core = core_loss* core_mass;
+P_copper = I1^2*R1 + I2^2*R2;
+Efficiency = S_rated/(S_rated+P_core+P_copper)*100;
+total_mass = copper_mass + core_mass;
+total_cost = core_material_cost*core_mass + copper_cost * copper_mass; 
+
+nacizane = table(N1,N2,B,core_mass,copper_mass,R1,R2,Lm,P_core,P_copper,Efficiency,total_cost);
+filename = 'Nacizane_datasheet.xlsx';
+writetable(nacizane,filename,'Sheet',1);
