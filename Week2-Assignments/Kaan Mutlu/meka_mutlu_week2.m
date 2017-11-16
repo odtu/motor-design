@@ -68,7 +68,7 @@ A_awg10 = pi*(0.5*2.588*10^-3)^2; %[m^2]
 A_awg0000 = pi*(0.5*11.684*10^-3)^2; %[m^2]
 fprintf('Cross-section area of a AWG 10 wire is %0.3f mm^2.',A_awg10*10^6)
 %%
-fprintf('Cross-section area of a AWG 4/0 wire is %0.3f mm^2. Eleven of them will be used.',A_awg0000*10^6)
+fprintf('AWG 4/0 wire''s is %0.3f mm^2. Eleven of them will be used.',A_awg0000*10^6)
 
 %%
 % For each operating flux density values, different core cross section
@@ -90,15 +90,15 @@ results = Core_selection();
 %%
 fprintf('It is better choose operating flux density as %1.1f T.',results(1));
 %%
-fprintf('With this selection and desired primary side turns becomes %d and secondary side turns becomes %d.',results(2),results(3));
+fprintf('Primary side turns becomes %d and secondary becomes %d.',results(2),results(3));
 %%
-fprintf('Cross section are is choosen as %d cm^2  and required core length is %1.1f m.',results(4)*10^4,results(5));
+fprintf('Cross section are is %d cm^2  and core length is %1.1f m.',results(4)*10^4,results(5));
 %%
-fprintf('For this volume, mass of the core becomes %1.2f kg. It means %1.2f kW of core loss.',results(6),results(7)*10^-3);
+fprintf('Mass of the core becomes %1.2f kg. It means %1.2f kW of core loss.',results(6),results(7)*10^-3);
 %%
-fprintf('Length of the primary side cable is %1.2f m. For the selected cable thickness it corresponds to %1.2f ohm resistance.',results(8),results(9));
+fprintf('Length of the primary side cable is %1.2f m. Its resistance is %1.2f ohm.',results(8),results(9));
 %%
-fprintf('Cable length of the secondary side is %1.2f m and its resistance is %1.2f miliohm .',results(10),results(11)*10^3);
+fprintf('Secondary side''s length is %1.2f m and its resistance is %1.2f miliohm .',results(10),results(11)*10^3);
 %%
 Mass_Cu = (results(8)*A_awg10 + results(10)*A_awg0000*11)*8.96*10^6*10^-3;
 fprintf('Total mass of the copper is %1.2f kg.',Mass_Cu);
