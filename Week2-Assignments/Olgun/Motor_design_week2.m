@@ -38,3 +38,9 @@ L_m = N1^2/R_Core; % H
 P_Core = Core_Loss*Core_Mass;
 P_Copper = I1^2*R_Coil1 + I2^2*R_Coil2;
 Efficiency = 100*(S_rated/(S_rated+P_Core+P_Copper));
+Total_Cost = Core_Mass*Cost_Core + Copper_Mass*Cost_Copper;
+
+Datasheet = table(B,N1,N2,Core_Mass,Copper_Mass,R_Coil1,R_Coil2,L_m,P_Core,P_Copper,Efficiency,Total_Cost);
+
+filename = 'Datasheet.xlsx';
+writetable(Datasheet,filename,'Sheet',1)
