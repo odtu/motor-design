@@ -1,7 +1,7 @@
 
 NI = ΦR  
 Assuming infinite permeability  B = 0.5 T
-ΦR = B * A * Lgap/(µ0 * A) = B * Lgap/µ0 ≈ 8000 = NI (chosen as 8500 )
+ΦR = B * A * Lgap/(µ0 * A) = B * Lgap/µ0 ≈ 8000 = NI 
 
 choose N = 200 then  I = 40 A
 then L = N * flux / i = N * B * A / i
