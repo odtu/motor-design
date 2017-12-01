@@ -1,4 +1,4 @@
-![](./dia_ori.PNG)
+![](./dia_ori.png)
 
 ![](./fluxlinkage.PNG)
 
