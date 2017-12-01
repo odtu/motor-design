@@ -1,3 +1,6 @@
+# for diametrically oriented
+
+
 ![](./radial_flux_density.png)
 
 ![](./radial_flux_vector.png)
@@ -27,4 +30,20 @@ flux = B.*area;
 Ea = 4.44 * 1* flux * 25 *sqrt(2);
 
 ![](./inducedvoltage.PNG)
+
+
+# for radially oriented
+
+
+
+![](./radial_ori/rad_flux_density.png)
+
+![](./radial_ori/rad_flux_vector.png)
+
+![](./radial_ori/rad_B_rad.png)
+
+![](./radial_ori/fluxlinkage.PNG)
+
+
+![](./radial_ori/inducedvoltage.PNG)
 
