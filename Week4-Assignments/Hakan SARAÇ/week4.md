@@ -42,7 +42,7 @@ Ea = 4.44 * 1* flux * 25 *sqrt(2);
 
 ![](./radial_ori/rad_B_rad.png)
 
-![](./radial_ori/fluxlinkage.PNG)
+![](./radial_ori/flux_linkage.PNG)
 
 
 ![](./radial_ori/inducedvoltage.PNG)
